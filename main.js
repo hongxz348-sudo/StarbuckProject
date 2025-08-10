@@ -18,6 +18,14 @@ $(function(){
         $(".Changetowhite-btn").css("display" , "none");
         $(".ChangeBaground-btn").css("display", "block");
         $(".Detail").css("color" , "oklch(70.5% 0.015 286.067)");
+        $(".menu").hover(
+            function(){
+            $(this).css("color", "oklch(43.2% 0.095 166.913)");
+            },
+            function(){
+                $(this).css("color" , "black");
+            }
+        );
     });
 
 
@@ -30,6 +38,27 @@ $(function(){
         }else{
             $("#hiddenmenu").css("left", "-100%");
         }
-        
+    });
+
+
+    $(".btn").click(function(){
+        $(".menu").slideToggle();
+        $(".menu ").css("display" , "flex");
+    });
+     $(".btn1").click(function(){
+        $(".menu1").slideToggle();
+        $(".menu1").css("display" , "flex");
+    });
+     $(".btn3").click(function(){
+        $(".menu3").slideToggle();
+        $(".menu3").css("display" , "flex");
+    });
+     $(".btn4").click(function(){
+        $(".menu4").slideToggle();
+        $(".menu4").css("display" , "flex");
+    });
+     $(".btn5").click(function(){
+        $(".menu5").slideToggle();
+        $(".menu5").css("display" , "flex");
     });
 });
