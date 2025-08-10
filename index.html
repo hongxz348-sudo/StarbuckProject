@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Starbucks Clone</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet"> 
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </head> 
+    <body class="overflow-x-hidden" >
+        <!-- laptop Sreen -->
+        <nav class="hidden lg:flex  justify-between w-screen py-7 border-b-2 shadow-lg  border-gray-200 px-10">
+            <div class="flex items-center  gap-x-9">
+               <a href="#">
+               <img src="imges/Starbucks_Corporation_Logo_2011.svg.png" alt="Starburk Logo" class="w-12">
+               </a>
+               <a href="" class="menu text-sm hover:text-emerald-700 font-semibold tracking-[.1rem] transition delay-150 duration-150 ease-in-out">MENU</a>
+               <a href="" class="menu text-sm hover:text-emerald-700 font-semibold tracking-[.1rem] transition delay-150 duration-150 ease-in-out">REWARDS</a>
+               <a href="" class="menu text-sm hover:text-emerald-700 font-semibold tracking-[.1rem] transition delay-150 duration-150 ease-in-out">GIFT CARDS</a>
+            </div>
+            <div class="flex items-center  gap-3 ">
+                <div class="mr-10 cursor-pointer transition delay-150 duration-150 ease-in-out hover:text-emerald-700 font-semibold">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="text-sm font-stretch-extra-condensed">Find a store</span>
+                </div> 
+                <button class="border-[1px] px-4 py-1 border-black font-semibold rounded-2xl hover:bg-emerald-700
+                transition delay-150 duration-150 ease-in-out text-sm">Sign in</button>
+                <button class="border-[1px] px-4 py-1.5 bg-black text-white font-semibold rounded-2xl transition delay-150 duration-150 ease-in-out hover:bg-gray-500 text-sm">Join now</button>
+                <i class="ChangeBaground-btn fa-solid fa-moon cursor-pointer text-yellow-400 text-xl"></i>
+                <i class="Changetowhite-btn fa-solid fa-circle-half-stroke cursor-pointer text-slate-600 hidden  text-xl"></i>
+            </div>
+        </nav>
+        <!-- endlaptop screen -->
+        <!-- phone screen end -->
+        <nav class="flex lg:hidden justify-between py-5 border-b-2 shadow-lg relative border-gray-200 px-3">
+            <div>
+                <i id="closeMenubtn" class="fa-solid fa-bars cursor-pointer text-xl"></i>
+                <div id="hiddenmenu" class="flex flex-col  absolute rounded-sm z-20 left-[-100%] top-20 bg-zinc-500 w-96 max-h-screen  p-5 space-y-3 ">
+                    <h1 id="description" class="text-3xl text-center  text-yellow-400">Menu</h1>
+                    <a href="" class="text-lg font-semibold text-white ">Menu</a>
+                    <a href="" class="text-lg font-semibold text-white ">Rewerd</a>
+                    <a href="" class="text-lg font-semibold text-white ">Gift Cards</a>
+                    <div  class="border-t-2  border-gray-400 mt-11 pt-11">
+                        <button class="border-[1px] px-4 py-1 border-black font-semibold rounded-2xl hover:bg-emerald-700
+                        transition delay-150 duration-150 ease-in-out text-sm">Sign in</button>
+                        <button class="border-[1px] ml-4 px-4 py-1.5 bg-black text-white font-semibold rounded-2xl transition delay-150 duration-150 ease-in-out hover:bg-gray-500 text-sm">Join now</button>
+                    </div>
+                    <div class="mr-10 cursor-pointer transition delay-150 duration-150 ease-in-out hover:text-emerald-700 font-semibold">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span class="text-sm font-stretch-extra-condensed">Find a store</span>
+                </div> 
+                </div>
+            </div>
+            
+            <div>
+                <i class="ChangeBaground-btn fa-solid fa-moon cursor-pointer text-yellow-400 text-xl" ></i>
+                <i class="Changetowhite-btn fa-solid fa-circle-half-stroke cursor-pointer text-slate-600 hidden text-xl"></i>
+            </div>
+        </nav>
+        <!-- endphone screen -->
+         
+
+        <!-- laptop-screen -->
+        <main class="px-10 hidden lg:block">
+            <div class="flex pt-4 " data-aos="fade-up"  data-aos-duration="700">
+                <img src="imges/img-1.jpg"  alt="" class="w-[45rem] rounded-tl-xl rounded-bl-xl">
+                <div class="bg-[#f1e3c7] w-[45rem] p-20 space-y-1 flex justify-center items-center rounded-tr-xl rounded-br-xl flex-col">
+                  <div class="flex justify-center items-center flex-col mb-7">
+                        <div class="text-5xl font-bold tracking-[.1rem] text-emerald-700
+                        "> Raspberry’s finally  </div>
+                        <div class="text-5xl font-bold tracking-[.1rem] text-emerald-700">
+                            back (for now)
+                        </div>
+                  </div>
+                 
+                  <div class="text-xl font-stretch-125% tracking-[.1rem]  text-emerald-700">
+                    Add raspberry syrup to your favorite drinks
+                  </div>
+                  <div class="text-xl font-stretch-125% tracking-[.1rem] text-emerald-700">
+                    for a very limited time. Plus try the  new 
+                  </div>
+                  <div class="text-xl font-stretch-125% tracking-[.1rem] text-emerald-700 mb-5">
+                     Raspberry Cream Cold Brew.
+                  </div>
+                  <div class="pt-7">
+                     <button class="bg-emerald-700  px-3 py-2 rounded-3xl hover:bg-emerald-600 text-white font-bold" >Order now</button>
+                  </div>
+                </div>
+            </div>
+            <div class="flex  pt-4" data-aos="fade-up"  data-aos-duration="700">
+                    <div class="bg-[#dfc49d] w-[45rem] rounded-tl-lg rounded-bl-lg p-20 space-y-1 flex justify-center items-center flex-col">
+                    <div class="flex justify-center items-center flex-col mb-7">
+                            <div class="text-4xl font-bold tracking-[.1rem] text-gray-700
+                            "> Free drink? Yes, please. </div>
+                    </div>
+                    
+                    <div class="text-lg font-stretch-125% tracking-[.1rem]  text-gray-700">
+                        Enjoy a free handcrafted drink when you make a
+                    </div>
+                    <div class="text-lg font-stretch-125% tracking-[.1rem] text-gray-700">
+                        qualifying purchase during your first week as a Starbucks®
+                    </div>
+                    <div class="text-lg font-stretch-125% tracking-[.1rem] text-gray-700 mb-5">
+                        Rewards member.*
+                    </div>
+                    <div class="pt-7">
+                        <button class="  px-3 py-2 rounded-3xl border-[1px] hover:bg-gray-500 border-black text-black font-bold" >Join & order</button>
+                    </div>
+                    </div>
+                    <img src="imges/img-2.jpg"  alt="" class="w-[45rem] object-cover object-center rounded-tr-lg rounded-br-lg ">
+            </div>
+            <div class="flex pt-4" data-aos="zoom-in"  data-aos-duration="700">
+                    <img src="imges/img-3.webp"  alt="" class="w-[45rem] rounded-tl-xl rounded-bl-xl">
+                    <div class="bg-[#f1e3c7] w-[45rem] p-20 space-y-1 flex justify-center items-center rounded-tr-xl rounded-br-xl flex-col">
+                    <div class="flex justify-center items-center flex-col mb-7">
+                            <div class="text-4xl font-bold tracking-[.1rem] text-gray-700
+                            "> Delightful Strato™ </div>
+                            <div class="text-4xl font-bold tracking-[.1rem] text-gray-700">
+                                Frappuccino®
+                            </div>
+                            <div class="text-4xl font-bold tracking-[.1rem] text-gray-700">
+                                beverages
+                            </div>
+                    </div>
+                    
+                    <div class="text-xl font-stretch-125% tracking-[.1rem]  text-gray-700">
+                        Treat yourself to layers of flavor and rich cold
+                    </div>
+                    <div class="text-xl font-stretch-125% tracking-[.1rem] text-gray-700">
+                        foam, in Brown Sugar, Salted Caramel Mocha
+                    </div>
+                    <div class="text-xl font-stretch-125% tracking-[.1rem] text-gray-700 mb-5">
+                        and Strawberry Matcha. Get them while you
+                    </div>
+                    <div class="text-xl font-stretch-125% tracking-[.1rem] text-gray-700 mb-5">
+                        can—for a limited time.
+                    </div>
+                    <div class="pt-7">
+                        <button class=" border-[1px] border-gray-900 px-3 py-2 rounded-3xl hover:bg-gray-400 text-gray-800 font-bold" >Order now</button>
+                    </div>
+                    </div>
+            </div>
+            <div class="flex  pt-4" data-aos="fade-left"  data-aos-duration="700">
+                    <div class="bg-[#dfc49d] w-[45rem] rounded-tl-lg rounded-bl-lg p-20 space-y-1 flex justify-center items-center flex-col">
+                    <div class="flex justify-center items-center flex-col mb-7">
+                            <div class="text-4xl font-bold tracking-[.1rem] text-gray-700
+                            "> Our captivating </div>
+                            <div class="text-4xl font-bold tracking-[.1rem] text-gray-700
+                            ">new collection </div>
+                    </div>
+                    
+
+                    <div class="text-xl font-stretch-125% tracking-[.1rem]  text-gray-700">
+                        Nigerian-American artist Shadé Akanbi
+                    </div>
+                    <div class="text-xl font-stretch-125% tracking-[.1rem] text-gray-700">
+                        blends tradition and modernity to create rich
+                    </div>
+                    <div class="text-xl font-stretch-125% tracking-[.1rem] text-gray-700 mb-5">
+                    prints and patterns. For a limited time.
+                    </div>
+                    <div class="pt-7">
+                        <button class="  px-3 py-2 rounded-3xl border-[1px] hover:bg-gray-500 border-black text-black font-bold" >Learn more</button>
+                    </div>
+                    </div>
+                    <img src="imges/img-4.webp"  alt="" class="w-[45rem] object-cover object-center rounded-tr-lg rounded-br-lg ">
+            </div>
+            <div class="flex  pt-4" data-aos="fade-up"  data-aos-duration="700">
+                    <img src="imges/img-5.jpg"  alt="" class="w-[45rem] rounded-tl-lg rounded-bl-lg ">
+                    <div class="bg-zinc-800 w-[45rem] rounded-tr-lg rounded-br-lg p-20 space-y-1 flex justify-center items-center flex-col">
+                    <div class="flex justify-center items-center flex-col mb-7">
+                            <div class="text-4xl font-bold tracking-[.1rem] text-gray-100
+                            ">  A Private Concert in NYC </div>
+                    </div>
+                    <div class="text-lg font-stretch-125% tracking-[.1rem] text-gray-100">
+                        Win exclusive access to see singer-songwriter Alex
+                    </div>
+                    <div class="text-lg font-stretch-125% tracking-[.1rem] text-gray-100 mb-5">
+                    Warren live at the Starbucks Reserve® Roastery NYC on
+                    </div>
+                    <div class="text-xl font-stretch-125% tracking-[.1rem] text-gray-100 mb-5">
+                    9/27/25.**
+                    </div>
+                    <div class="pt-7">
+                        <button class="  px-3 py-2 rounded-3xl border-[1px] hover:bg-gray-500 border-black text-gray-200 font-bold" >Enter Sweepstakes</button>
+                    </div>
+                    </div>
+            </div> 
+            </div>
+        </main>
+        <!-- end laptop Screen -->
+         <!-- phone-screen -->
+        <main class="lg:hidden" >
+             <div class="pt-4" data-aos="fade-up"  data-aos-duration="700">
+                <img src="imges/img-1.jpg"  alt="" class="w-screen rounded-tl-xl rounded-tr-xl ">
+                <div class="bg-[#f1e3c7] w-screen p-5  flex justify-center items-center rounded-bl-xl rounded-br-xl flex-col">
+                  <div class="flex justify-center items-center flex-col mb-1">
+                        <div class="text-xl font-bold tracking-[.1rem] text-emerald-700
+                        "> Raspberry’s finally  back   </div>
+                        <div class="text-xl font-bold tracking-[.1rem] text-emerald-700">
+                           (for now)
+                        </div>
+                  </div>
+                 
+                  <div class="text-lg font-stretch-125% tracking-[1px]  text-emerald-700">
+                    Add raspberry syrup to your favorite drinks
+                  </div>
+                  <div class="text-lg font-stretch-125% tracking-[1px] text-emerald-700">
+                    for a very limited time. Plus try the  new 
+                  </div>
+                  <div class="text-lg font-stretch-125% tracking-[1px] text-emerald-700 mb-1">
+                     Raspberry Cream Cold Brew.
+                  </div>
+                  <div class="pt-1">
+                     <button class="bg-emerald-700  px-3 py-2 rounded-3xl hover:bg-emerald-600 text-white font-bold" >Order now</button>
+                  </div>
+                </div>
+            </div>
+             <div class="pt-4" data-aos="fade-up"  data-aos-duration="700">
+                <img src="imges/img-2.jpg"  alt="" class="w-screen rounded-tl-xl rounded-tr-xl ">
+                <div class="bg-[#f1e3c7] w-screen p-5  flex justify-center items-center rounded-bl-xl rounded-br-xl flex-col">
+                  <div class="flex justify-center items-center flex-col mb-1">
+                        <div class="text-xl font-bold tracking-[.1rem] text-gray-600
+                        ">Free drink? Yes, please. </div>
+                  </div>
+                 
+                  <div class="text-sm font-stretch-125% text-gray-600 ">
+                    Enjoy a <strong>free handcrafted drink</strong>  when you make a
+                  </div>
+                  <div class="text-sm font-stretch-125%  text-gray-600 ">
+                    qualifying purchase during your first week as a Starbucks®
+                  </div>
+                  <div class="text-sm font-stretch-125%  text-gray-600  mb-1">
+                     Rewards member.*
+                  </div>
+                  <div class="pt-1">
+                     <button class=" border-[1px] border-black px-3 py-2 rounded-3xl hover:bg-emerald-600 text-gray-600 font-bold" >Join & Order</button>
+                  </div>
+                </div>
+            </div>
+             <div class="pt-4" data-aos="fade-up"  data-aos-duration="700">
+                <img src="imges/img-3.webp"  alt="" class="w-screen rounded-tl-xl rounded-tr-xl ">
+                <div class="bg-[#f1e3c7] w-screen p-5  flex justify-center items-center rounded-bl-xl rounded-br-xl flex-col">
+                  <div class="flex justify-center items-center flex-col mb-1">
+                        <div class="text-xl font-bold tracking-[.1rem] text-gray-600
+                        ">Delightful Strato™ </div>
+                         <div class="text-xl font-bold tracking-[.1rem] text-gray-600
+                        ">Frappuccino® beverages </div>
+                  </div>
+                 
+                  <div class="text-sm font-stretch-125% text-gray-600 ">
+                    Treat yourself to layers of flavor and rich cold
+                  </div>
+                  <div class="text-sm font-stretch-125%  text-gray-600 ">
+                    foam, in Brown Sugar, Salted Caramel Mocha
+                  </div>
+                  <div class="text-sm font-stretch-125%  text-gray-600  mb-1">
+                    and Strawberry Matcha. Get them while you
+                  </div>
+                  <div class="text-sm font-stretch-125%  text-gray-600  mb-1">
+                    can—for a limited time.
+                  </div>
+                  <div class="pt-1">
+                     <button class=" border-[1px] border-black px-3 py-2 rounded-3xl hover:bg-emerald-600 text-gray-600 font-bold" >Order Now</button>
+                  </div>
+                </div>
+            </div>
+             <div class="pt-4" data-aos="fade-up"  data-aos-duration="700">
+                <img src="imges/img-4.webp"  alt="" class="w-screen rounded-tl-xl rounded-tr-xl ">
+                <div class="bg-[#f1e3c7] w-screen p-5  flex justify-center items-center rounded-bl-xl rounded-br-xl flex-col">
+                  <div class="flex justify-center items-center flex-col mb-1">
+                        <div class="text-xl font-bold tracking-[.1rem] text-gray-600
+                        ">Our captivating</div>
+                         <div class="text-xl font-bold tracking-[.1rem] text-gray-600
+                        ">new collection </div>
+                  </div>
+                 
+                  <div class="text-sm font-stretch-125% text-gray-600 ">
+                    Nigerian-American artist Shadé Akanbi
+                  </div>
+                  <div class="text-sm font-stretch-125%  text-gray-600 ">
+                    blends tradition and modernity to create rich
+                  </div>
+                  <div class="text-sm font-stretch-125%  text-gray-600  mb-1">
+                   prints and patterns. For a limited time.
+                  </div>
+                  <div class="pt-1">
+                     <button class=" border-[1px] border-black px-3 py-2 rounded-3xl hover:bg-emerald-600 text-gray-600 font-bold" >Learn More</button>
+                  </div>
+                </div>
+            </div>
+            <div class="pt-4" data-aos="fade-up"  data-aos-duration="700">
+                <img src="imges/img-5.jpg"  alt="" class="w-screen rounded-tl-xl rounded-tr-xl ">
+                <div class="bg-zinc-800 w-screen p-5  flex justify-center items-center rounded-bl-xl rounded-br-xl flex-col">
+                  <div class="flex justify-center items-center flex-col mb-1">
+                        <div class="text-xl font-bold tracking-[.1rem] text-white
+                        ">A Private Concert in NYC</div>
+                  </div>
+                 
+                  <div class="text-sm font-stretch-125% text-white ">
+                    Win exclusive access to see singer-songwriter Alex
+                  </div>
+                  <div class="text-sm font-stretch-125%  text-white ">
+                    Warren live at the Starbucks Reserve® Roastery NYC on
+                  </div>
+                  <div class="text-sm font-stretch-125%  text-white  mb-1">
+                   9/27/25.**
+                  </div>
+                  <div class="pt-1">
+                     <button class=" border-[1px] border-white px-3 py-2 rounded-3xl hover:bg-emerald-600 text-white font-bold" >Enter Sweepstakes</button>
+                  </div>
+                </div>
+            </div>
+        </main>
+        <!-- end phone-screen -->
+         
+        <section class="px-10 text-center mb-10" data-aos="fade-up" data-aos-duration="700">
+            <div id="description" class="mt-10 text-lg">
+                <p>*Valid for new Starbucks Rewards members for 7 days from sign up. Coupon will be available in the</p>
+                <p>offers tab of your Starbucks app following sign up and may take up to 48 hours to arrive. Good at</p>
+                <p>participating U.S. stores for a handcrafted menu-sized beverage ($8 max value) with qualifying</p>
+                <p>purchase. Qualifying purchase excludes alcohol, Starbucks Card and Card reloads. Limit one.</p>
+                <p>Cannot be combined with other offers or discounts. Excludes delivery services. Sign up by</p>
+                <p>9/28/2025. </p>
+            </div>
+            
+            <div id="description" class="mt-20" data-aos="fade-up" data-aos-duration="700">
+                <p>**No purchase necessary. 21+ in 50 US/DC. Ends 11:59 PM ET on 8/13/25. Eligibility/Rules:</p>
+                <p>https://JoinMarriottBonvoy.com/AlexWarrenAtStarbucks. Starbucks is not responsible for the</p>
+                <p>administration of this Sweepstakes.</p>
+            </div>
+        </section>
+
+        <!-- laptop Screen -->
+        <footer class="border-t-2  pb-10 shadow-lg px-10 " data-aos="fade-up" data-aos-duration="700" >
+           <div class="flex justify-center gap-x-24" >   
+                <div class="Detail space-y-2.5 flex flex-col mt-5 text-zinc-400">
+                    <h1 class="text-xl font-semibold text-zinc-700 mb-2">About Us</h1>
+                    <a href="" class="hover:text-zinc-800 text-lg">Our Company</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Our Coffe</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">About Starbucks</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Starbark Archieve</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Investor Relations</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Customer Service</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Contact Us</a>
+                </div>
+                <div class="Detail space-y-2.5 flex flex-col mt-5 text-zinc-400">
+                    <h1 class="text-xl font-semibold text-zinc-700 mb-2">About Us</h1>
+                    <a href="" class="hover:text-zinc-800 text-lg">Our Company</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Our Coffe</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">About Starbucks</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Starbark Archieve</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Investor Relations</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Customer Service</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Contact Us</a>
+                </div>
+                <div class="Detail space-y-2.5 flex flex-col mt-5 text-zinc-400">
+                    <h1 class="text-xl font-semibold text-zinc-700 mb-2">About Us</h1>
+                    <a href="" class="hover:text-zinc-800 text-lg">Our Company</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Our Coffe</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">About Starbucks</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Starbark Archieve</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Investor Relations</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Customer Service</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Contact Us</a>
+                </div>
+                <div class="Detail space-y-2.5 flex flex-col mt-5 text-zinc-400">
+                    <h1 class="text-xl font-semibold text-zinc-700 mb-2">About Us</h1>
+                    <a href="" class="hover:text-zinc-800 text-lg">Our Company</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Our Coffe</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">About Starbucks</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Starbark Archieve</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Investor Relations</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Customer Service</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Contact Us</a>
+                </div>
+                <div class="Detail space-y-2.5 flex flex-col mt-5 text-zinc-400">
+                    <h1 class="text-xl font-semibold text-zinc-700 mb-2">About Us</h1>
+                    <a href="" class="hover:text-zinc-800 text-lg">Our Company</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Our Coffe</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">About Starbucks</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Starbark Archieve</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Investor Relations</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Customer Service</a>
+                    <a href="" class="hover:text-zinc-800 text-lg">Contact Us</a>
+                </div> 
+            </div>
+           
+            <div class="py-10 mt-10 border-t-2 " data-aos="fade-up" data-aos-duration="700">
+                <a href="">
+                    <i class="text-3xl fa-brands fa-spotify hover:bg-zinc-300 hover:rounded-full "></i>
+                </a>
+              
+                <a href="">
+                    <i class="text-3xl fa-brands fa-facebook hover:bg-zinc-300 hover:rounded-full"></i>
+                </a>
+                <a href=""> 
+                    <i class="text-3xl fa-brands fa-pinterest hover:bg-zinc-300 hover:rounded-full"></i>
+                </a>
+                <a href="">
+                    <i class="text-3xl fa-brands fa-square-instagram hover:bg-zinc-300 hover:rounded-full"></i>
+                </a>
+                <a href="">
+                    <i class="text-3xl fa-brands fa-youtube hover:bg-zinc-300 hover:rounded-full"></i>
+                </a>
+                <a href="">
+                    <i class="text-3xl fa-brands fa-x-twitter hover:bg-zinc-300 hover:rounded-full"></i>
+                </a>
+            </div>
+ 
+            <div id="subDescription" class="flex flex-col space-y-5 text-md " data-aos="fade-up" data-aos-duration="700">
+                <a class="hover:underline" href="">Privacy Notice</a>
+                <a class="hover:underline" href="">Consumer Health Privacy Notice</a>
+                <a class="hover:underline" href="">Terms of use</a>
+                <a class="hover:underline" href="">Do Not Share My Personal Information</a>
+                <a class="hover:underline" href="">CA supply Chain Act</a>
+                <a class="hover:underline" href="">Accessibility </a>
+                <a class="hover:underline" href="">Cookie Preferences</a>
+                <p class="text-zinc-400 text-md">© 2025 Starbucks Coffee Company. All rights reserved.</p>
+            </div>
+        </footer>
+        
+        
+    </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
