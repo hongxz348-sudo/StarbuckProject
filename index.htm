@@ -28,19 +28,23 @@
                     <i class="fa-solid fa-location-dot"></i>
                     <span class="text-sm font-stretch-extra-condensed">Find a store</span>
                 </div> 
-                <button class="border-[1px] px-4 py-1 border-black font-semibold rounded-2xl hover:bg-emerald-700
+                <button class="border-[1px]  px-4 py-1 border-black font-semibold rounded-2xl hover:bg-emerald-700
                 transition delay-150 duration-150 ease-in-out text-sm">Sign in</button>
                 <button class="border-[1px] px-4 py-1.5 bg-black text-white font-semibold rounded-2xl transition delay-150 duration-150 ease-in-out hover:bg-gray-500 text-sm">Join now</button>
                 <i class="ChangeBaground-btn fa-solid fa-moon cursor-pointer text-yellow-400 text-xl"></i>
                 <i class="Changetowhite-btn fa-solid fa-circle-half-stroke cursor-pointer text-slate-600 hidden  text-xl"></i>
             </div>
+            
         </nav>
         <!-- endlaptop screen -->
         <!-- phone screen end -->
         <nav class="flex lg:hidden justify-between py-5 border-b-2 shadow-lg relative border-gray-200 px-3">
             <div>
                 <i id="closeMenubtn" class="fa-solid fa-bars cursor-pointer text-xl"></i>
-                <div id="hiddenmenu" class="flex flex-col  absolute rounded-sm z-20 left-[-100%] top-20 bg-zinc-500 w-96 max-h-screen  p-5 space-y-3 ">
+                <div id="hiddenmenu" class="flex flex-col h-screen w-96 fixed   rounded-sm z-20 left-[-100%]  top-0 bg-zinc-500    p-5 space-y-3 ">
+                    <div class="grid place-content-end">
+                        <i class="fa-solid fa-xmark text-xl  text-white" id="CloseMenu-btn"></i>
+                    </div>
                     <h1 id="description" class="text-3xl text-center  text-yellow-400">Menu</h1>
                     <a href="" class="text-lg font-semibold text-white ">Menu</a>
                     <a href="" class="text-lg font-semibold text-white ">Rewerd</a>
@@ -54,6 +58,7 @@
                       <i class="fa-solid fa-location-dot"></i>
                       <span class="text-sm font-stretch-extra-condensed">Find a store</span>
                 </div> 
+                
                 </div>
             </div>
             
@@ -388,7 +393,7 @@
                     <a href="" class="hover:text-zinc-800 text-lg">Investor Relations</a>
                     <a href="" class="hover:text-zinc-800 text-lg">Customer Service</a>
                     <a href="" class="hover:text-zinc-800 text-lg">Contact Us</a>
-                </div>   
+                </div>  
             </div>
             <div class="lg:hidden">
                 <div class="Detail space-y-1 justify-between flex-col mt-5 text-zinc-400">
@@ -430,7 +435,6 @@
                       <h1 class="text-xl font-semibold text-zinc-700 mb-2">Social Impact</h1>
                       <i class="fa-solid fa-angle-down text-xl btn3"></i>
                     </div>
-                    
                     <div class="menu3 hidden flex flex-col">
                         <a href="" class="hover:text-zinc-800 text-lg">Our Company</a>
                         <a href="" class="hover:text-zinc-800 text-lg">Our Coffe</a>
@@ -477,29 +481,69 @@
                    
                 </div>
             </div>
-           
-            <div class="py-10 mt-10 border-t-2 " data-aos="fade-up" data-aos-duration="700">
-                <a href="">
-                    <i class="text-3xl fa-brands fa-spotify hover:bg-zinc-300 hover:rounded-full "></i>
-                </a>
-              
-                <a href="">
-                    <i class="text-3xl fa-brands fa-facebook hover:bg-zinc-300 hover:rounded-full"></i>
-                </a>
-                <a href=""> 
-                    <i class="text-3xl fa-brands fa-pinterest hover:bg-zinc-300 hover:rounded-full"></i>
-                </a>
-                <a href="">
-                    <i class="text-3xl fa-brands fa-square-instagram hover:bg-zinc-300 hover:rounded-full"></i>
-                </a>
-                <a href="">
-                    <i class="text-3xl fa-brands fa-youtube hover:bg-zinc-300 hover:rounded-full"></i>
-                </a>
-                <a href="">
-                    <i class="text-3xl fa-brands fa-x-twitter hover:bg-zinc-300 hover:rounded-full"></i>
-                </a>
+
+            <div class="flex space-x-1 my-16">
+            <!-- Spotify -->
+                <div class="relative group">
+                    <span style="--name-color: oklch(69.6% 0.17 162.48)" class="tooltip absolute -top-9 left-1/2 -translate-x-1/2 text-sm text-white bg-emerald-500 px-2 py-1 rounded shadow opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:-translate-y-2 transition-all duration-200">
+                    Spotify
+                    </span>
+                   <a href="#" class="transition-transform duration-300 grid place-content-center hover:scale-110 hover:bg-emerald-300  text-emerald-500 p-2 rounded-full">
+                    <i class="text-3xl fa-brands fa-spotify"></i>
+                   </a>
+                </div>
+
+                <!-- Facebook -->
+                <div class="relative group">
+                    <span style="--name-color:oklch(50% 0.134 242.749)" class="tooltip absolute -top-9 left-1/2 -translate-x-1/2 text-sm text-white bg-sky-700 px-2 py-1 rounded shadow opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:-translate-y-2 transition-all duration-200">
+                    Facebook
+                    </span>
+                    <a href="#" class="transition-transform duration-300 grid place-content-center hover:scale-110 hover:bg-sky-400 text-sky-700  p-2 rounded-full">
+                    <i class="text-3xl fa-brands fa-facebook"></i>
+                   </a>
+                </div>
+
+                <!-- Pinterest -->
+                <div class="relative group">
+                    <span style="--name-color:oklch(50.5% 0.213 27.518)" class="tooltip absolute -top-9 left-1/2 -translate-x-1/2 text-sm text-white bg-red-700 px-2 py-1 rounded shadow opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:-translate-y-2 transition-all duration-200">
+                    Pinterest
+                    </span>
+                     <a href="#" class="transition-transform duration-300 grid place-content-center hover:scale-110 hover:bg-red-400 text-red-700 p-2 rounded-full">
+                    <i class="text-3xl fa-brands fa-pinterest"></i>
+                    </a>
+                </div>
+
+                <!-- Instagram -->
+                <div class="relative group">
+                    <span style="--name-color:oklch(45.9% 0.187 3.815)" class="tooltip absolute -top-9 left-1/2 -translate-x-1/2 text-sm text-white bg-pink-800 px-2 py-1 rounded shadow opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:-translate-y-2 transition-all duration-200">
+                    Instagram
+                    </span>
+                    <a href="#" class="transition-transform duration-300 grid place-content-center hover:scale-110 hover:bg-pink-400 text-pink-800 p-2 rounded-full">
+                    <i class="text-3xl fa-brands fa-square-instagram"></i>
+                    </a>
+                </div>
+
+                <!-- YouTube -->
+                <div class="relative group">
+                    <span style="--name-color: #9f0712" class="tooltip absolute -top-9 left-1/2 -translate-x-1/2 text-sm text-white bg-red-800 px-2 py-1 rounded shadow opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:-translate-y-2 transition-all duration-200">
+                    YouTube
+                    </span>
+                    <a href="#" class="transition-transform duration-300 grid place-content-center hover:scale-110 hover:bg-red-300 text-red-800 p-2 rounded-full">
+                    <i class="text-3xl fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+
+                <!-- Twitter/X -->
+                <div class="relative group">
+                    <span style="--name-color:#314158" class="tooltip absolute -top-9 left-1/2 -translate-x-1/2 text-sm text-white bg-slate-700 px-2 py-1 rounded shadow opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:-translate-y-2 transition-all duration-200">
+                    Twitter   
+                    </span>
+                    <a href="#" class="transition-transform duration-300 grid place-content-center hover:scale-110 hover:bg-slate-600 p-2 rounded-full">
+                    <i class="text-3xl fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
             </div>
- 
+
             <div id="subDescription" class="flex flex-col space-y-5 text-md " data-aos="fade-up" data-aos-duration="700">
                 <a class="hover:underline" href="">Privacy Notice</a>
                 <a class="hover:underline" href="">Consumer Health Privacy Notice</a>

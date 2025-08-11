@@ -11,3 +11,13 @@
 #hiddenmenu{
     transition:.7s;
 }
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: var(--name-color) transparent transparent transparent;
+}

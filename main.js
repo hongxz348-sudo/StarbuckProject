@@ -27,20 +27,18 @@ $(function(){
             }
         );
     });
+    
 
-
-    const btn =  $("#closeMenubtn");
-    let OpenMenu = true;
-    btn.click(function(){
-        OpenMenu = !OpenMenu;
-        if(OpenMenu){
-            $("#hiddenmenu").css("left", "0%");
-        }else{
-            $("#hiddenmenu").css("left", "-100%");
-        }
+    $("#closeMenubtn").click(function(){
+        $("#hiddenmenu").css("left", "0%");
     });
 
+    $("#CloseMenu-btn").click(function(){
+        $("#hiddenmenu").css("left", "-100%");
+    });
+    
 
+   
     $(".btn").click(function(){
         $(".menu").slideToggle();
         $(".menu ").css("display" , "flex");
